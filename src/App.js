@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import UserProfileWithTimer from './UserProfileWithTimer';
+import UserProfileWithTimer from './components/UserProfileWithTimer';
 // import MouseTracker from "./MouseTracker.js"
 // import PostList from './PostList';
 // import CountdownTimer from './CountdownTimer';
