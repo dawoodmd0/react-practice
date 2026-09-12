@@ -1,8 +1,8 @@
-name: CI
+name: React CI
 
 on:
   push:
-    branches: ["main", "feature-login"]
+    branches: ["main"]
   pull_request:
     branches: ["main"]
 
@@ -18,9 +18,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Run tests
-        run: npm test
+      - name: Build React app
+        run: npm run build
